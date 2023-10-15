@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Doctor Reservation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="assets/js/app.js" defer type="module"></script>
+</head>
+
+<body>
+
+    <!---Background Image--->
+    <div class="bg-box"></div>
+    <div class="container">
+        <div class="main-box">
+            <!---Aside--->
+            <aside>
+                <ul class="menu-list">
+                    <!---Menu item--->
+                    <li class="menu-item" data-id="1">
+                        <div class="list-number">
+                            <span class='number--self'>1</span>
+                            <img src='assets/images/path.svg' />
+                        </div>
+                        Staff
+                    </li>
+                    <!---Menu item--->
+                    <li class="menu-item" data-id="2">
+                        <div class="list-number">
+                            <span class='number--self'>2</span>
+                            <img src='assets/images/path.svg' />
+                        </div>
+                        Service
+                    </li>
+                    <!---Menu item--->
+                    <li class="menu-item" data-id="3">
+                        <div class="list-number">
+                            <span class='number--self'>3</span>
+                            <img src='assets/images/path.svg' />
+                        </div>
+                        Date & Time
+                    </li>
+                    <!---Menu item--->
+                    <li class="menu-item" data-id="4">
+                        <div class="list-number">
+                            <span class='number--self'>4</span>
+                            <img src='assets/images/path.svg' />
+                        </div>
+                        Confirmation
+                    </li>
+                </ul>
+                <div class="divider"></div>
+            </aside>
+
+            <!---Main--->
+            <main>
+                <!---Staff section--->
+                <section class="staff-section single-section">
+                    <div class="top">
+                        <h2 class="title">Select staff</h1>
+                            <div class="icon-exit">
+                                <img src="./assets/images/exit-icon.svg" alt="Icon-exit">
+                            </div>
+                    </div>
+                    <div class="main">
+                        <!---Staff card list--->
+                        <ul class="card-list"></ul>
+                    </div>
+                </section>
+
+                <!---Service section--->
+                <div class="service-section single-section">
+                    <div class="top">
+                        <h2 class="title">Select service</h1>
+                            <div class="icon-exit">
+                                <img src="./assets/images/exit-icon.svg" alt="Icon-exit">
+                            </div>
+                    </div>
+                    <div class="main">
+                        <!---Service card list--->
+                        <ul class="card-list"></ul>
+                    </div>
+                </div>
+
+                <!---Date section--->
+                <div class="date-section single-section">
+                    <div class="top">
+                        <h2 class="title">Select date & time</h1>
+                            <div class="icon-exit">
+                                <img src="./assets/images/exit-icon.svg" alt="Icon-exit">
+                            </div>
+                    </div>
+                    <div class="main">
+                        <div class="calendar">
+                            <div class="header">
+                                <button id="prevBtn"><img src="assets/images/left-arrow.svg" alt="left-arrow"></button>
+                                <h2 id="currentMonthYear">Ocak 2023</h2>
+                                <button id="nextBtn"><img src="assets/images/right-arrow.svg"
+                                        alt="right-arrow"></button>
+                            </div>
+                            <div class="calendar-box">
+                                <div class="weekdays">
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div>Fri</div>
+                                    <div>Sat</div>
+                                    <div>Sun</div>
+                                </div>
+                                <div class="days"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="time-container">
+                            <div class="time--heading">
+                                time
+                            </div>
+                            <div class="time-self">
+                                <div class="inner-heading">
+                                    select date
+                                </div>
+
+                                <div class="calendar-content">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!---Confirm section--->
+                <div class="confirm-section single-section">
+                    <div class="top">
+                        <h2 class="title">Confirm details</h1>
+                            <div class="icon-exit">
+                                <img src="./assets/images/exit-icon.svg" alt="Icon-exit">
+                            </div>
+                    </div>
+                    <div class="main">
+                        <form action="#">
+                            <div class="confirm-box">
+                                <div class="input-box">
+                                    <label for="firstname">First name<span>*</span></label>
+                                    <input type="text" id="firstname" name="firstname">
+                                </div>
+                                <div class="input-box">
+                                    <label for="lastname">Last name<span>*</span></label>
+                                    <input type="text" id="lastname" name="lastname">
+                                </div>
+                                <div class="input-box">
+                                    <label for="email">E-mail<span>*</span></label>
+                                    <input type="email" id="email" name="emailname">
+                                </div>
+                                <div class="input-box">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+
+
+                        </form>
+
+                        <div class="note-box">
+                            <label>Note</label>
+                            <ul class="note-list">
+                                <li class="note-item">
+                                    Staff:
+                                    <span>Alexy Rosetta</span>
+                                </li>
+                                <li class="note-item">
+                                    Service:
+                                    <span>Oral hygiene</span>
+                                </li>
+                                <li class="note-item">
+                                    Date:
+                                    <span>2022-03-04 / 09:30-10:00
+                                    </span>
+                                </li>
+                                <li class="note-item">
+                                    Price:
+                                    <span class="price-txt">$123</span>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!---Footer--->
+                <footer>
+                    <!---Back btn--->
+                    <div class="left-box">
+                        <button class="back-btn">Back</button>
+                    </div>
+                    <!---Warning alert--->
+                    <div class="middle-box">
+                        <div class="alert-msg">
+                            <img src="./assets/images/staff-warning-icon.svg" alt="Icon-warning">
+                            <span>Select Staff</span>
+                        </div>
+                    </div>
+                    <!---Next btn--->
+                    <div class="right-box">
+                        <button class="nxt-btn">Next</button>
+                        <button class="confirm-btn">Confirm Booking</button>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <!---Modal--->
+    <div class="modal--alert">
+        <div class="modal--self">
+            <img src="assets/images/exit-icon.svg" />
+            <p class="modal-message"></p>
+        </div>
+    </div>
+
+</body>
+</html>
